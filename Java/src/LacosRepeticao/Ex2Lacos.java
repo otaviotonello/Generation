@@ -4,40 +4,65 @@ import java.util.Scanner;
 
 public class Ex2Lacos {
 
-	public static void main(String[] args) {
-		//2- Faça um programa que entre com três números e coloque em ordem crescente.
+	public static void main(String[] args) {Scanner sc = new Scanner(System.in);
+
+		    int x, y, z;
 		
-		double a, b, c;
+		    System.out.print("Digite o primeiro número: ");
+		    x = sc.nextInt();
 		
-		Scanner in = new Scanner(System.in);
+		    System.out.print("Digite o segundo número: ");
+		    y = sc.nextInt();
 		
-		System.out.print("Digite um número: ");
-		a = in.nextDouble();
+		    System.out.print("Digite o terceiro número: ");
+		    z = sc.nextInt();
 		
-		System.out.print("Digite outro número: ");
-		b = in.nextDouble();
+		    if (x < y && y < z) {
+		        System.out.println("\nOrdem crescente: " + x + ", " + y + " e " + z);
+		    }
 		
-		System.out.print("Digite outro número: ");
-		c = in.nextDouble();
+		    else if (y > x && x > z) {
+		        System.out.println("\nOrdem crescente: " + z + ", " + x + " e " + y);
+		    }
 		
-		if(a<b && b<c) {
-			System.out.println("Ordem crescente: " + a + " " + b + " " + c);
-		} else if(a<b && c<b) {
-			System.out.println("Ordem crescente: " + a + " " + c + " " + b);
-		} else if(b<a && a<c) {
-			System.out.println("Ordem crescente: " + b + " " + a + " " + c);
-		} else if(b<a && c<a) {
-			System.out.println("Ordem crescente: " + b + " " + c + " " + a);
-		} else if(c<b && b<a) {
-			System.out.println("Ordem crescente: " + c + " " + b + " " + a);
-		} else {
-			System.out.println("Ordem crescente: " + c + " " + a + " " + b);
-		}
+		    else if (y < x && x < z) {
+		        System.out.println("\nOrdem crescente: " + y + ", " + x + " e " + z);
+		    }
 		
+		    else if (y > x && z > x) {
+		        System.out.println("\nOrdem crescente: " + x + ", " + z + " e " + y);
+		    }
 		
+		    else if (z > y && x > z) {
+		        System.out.println("\nOrdem crescente: " + y + ", " + z + " e " + x);
+		    }
 		
+		    else if (z < x && y < x) {
+		        System.out.println("\nOrdem crescente: " + z + ", " + y + " e " + x);
+		    }
 		
-		in.close();
+		    else if (x == y && z > x) {
+		        System.out.println("\nOrdem crescente: " + x + ", " + y + " e " + z);
+		    }
+		
+		    else if (x == z && y > x) {
+		        System.out.println("\nOrdem crescente: " + x + ", " + z + " e " + y);
+		    }
+		
+		    else if (x == y && z < x) {
+		        System.out.println("\nOrdem crescente: " + z + ", " + y + " e " + x);
+		    }
+		
+		    else if (x == z && y < x) {
+		        System.out.println("\nOrdem crescente: " + y + ", " + z + " e " + x);
+		    } 
+		
+		    else {
+		           System.out.println("\nOrdem crescente: " + x + ", " + z + " e " + y);
+		    }
+		
+		    sc.close();
+		    
 	}
 
 }
