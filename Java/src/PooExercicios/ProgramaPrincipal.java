@@ -8,18 +8,23 @@ public class ProgramaPrincipal {
 		Preguica p = new Preguica();
 		Cavalo k = new Cavalo();
 		
-		System.out.println("Cachorro:");
+		c.setNome("Rex");
+		c.setIdade(3);
+		System.out.println("Cachorro: " + c.getNome() + " | Idade: " + c.getIdade());
 		c.acao();
 		c.emitirSom();
 		System.out.println("----------------------------------------------------------");
 		
-		
-		System.out.println("Preguiça:");
+		p.setNome("Preguicinha");
+		p.setIdade(12);
+		System.out.println("Preguiça: " + p.getNome() + " | Idade: " + p.getIdade());
 		p.acao();
 		p.emitirSom();
 		System.out.println("----------------------------------------------------------");
 		
-		System.out.println("Cavalo:");
+		k.setNome("Afonso");
+		k.setIdade(23);
+		System.out.println("Cavalo: " + k.getNome() + " | Idade: " + k.getIdade());
 		k.acao();
 		k.emitirSom();
 		System.out.println("----------------------------------------------------------");
