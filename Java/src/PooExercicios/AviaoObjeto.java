@@ -17,7 +17,8 @@ public class AviaoObjeto {
 		p1.setCompanhia(in.next());
 		
 		
-		System.out.println("O total de pessoas no avião: " + p1.totalPessoas(p1.getPassageiros(), p1.getTripulantes()));
+		System.out.println("O total de pessoas no avião é " + p1.totalPessoas(p1.getPassageiros(), p1.getTripulantes()) + 
+				" pessoas.");
 		System.out.println("Irá viajar no avião da: " + p1.empresa(p1.getCompanhia()));
 		
 		in.close();
